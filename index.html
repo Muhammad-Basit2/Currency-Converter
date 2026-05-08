@@ -6,6 +6,7 @@
     <title>Currency-Converter</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 </head>
 <body>
     <div class="container">
@@ -13,7 +14,7 @@
         <form action="">
             <div class="amount">
                 <p>
-                    enter amount
+                Enter Amount
                 </p>
                 <input value="100" type="text">
             </div>
@@ -21,12 +22,8 @@
                 <div class="from">
                     <p>From</p>
                     <div class="select-container">
-                        <img src="https://flagsapi.com/US/flat/64.png" alt="">
-                        <select name="currency" id="currency">
-                            <option value="USD">USD</option>
-                            <option value="INR">INR</option>
-                            <option value="PKR">PKR</option>
-                            <option value="EUR">EUR</option>
+                        <img src="https://flagsapi.com/US/flat/64.png">
+                        <select name="from">
                         </select>
                     </div>
                 </div>
@@ -35,11 +32,7 @@
                     <p>To</p>
                     <div class="select-container">
                         <img src="https://flagsapi.com/PK/flat/64.png" alt="">
-                        <select name="currency" id="currency">
-                            <option value="USD">USD</option>
-                            <option value="INR">INR</option>
-                            <option value="PKR" selected>PKR</option>
-                            <option value="EUR">EUR</option>
+                        <select name="to">
                         </select>
                     </div>
                 </div>
@@ -48,5 +41,7 @@
             <button>Convert</button>
         </form>
     </div>
+    <script src="codes.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
